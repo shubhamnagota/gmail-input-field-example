@@ -4,6 +4,7 @@
   padding: 1px;
   display: flex;
   flex-wrap: wrap;
+  margin: 2px;
 }
 
 .email__input__list_item {

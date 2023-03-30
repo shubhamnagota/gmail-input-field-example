@@ -4,12 +4,19 @@ import './style.css';
 import EmailInput from './components/EmailInput';
 
 export default function App() {
-  const [emails, setEmails] = React.useState([]);
+  const [toEmails, setToEmails] = React.useState([]);
+  const [ccEmails, setCcEmails] = React.useState([]);
+  const [bccEmails, setBccEmails] = React.useState([]);
 
   return (
     <>
-      {JSON.stringify(emails)}
-      <EmailInput emails={emails} setEmails={setEmails} />
+      <EmailInput emails={toEmails} setEmails={setToEmails} />
+      <EmailInput emails={ccEmails} setEmails={setCcEmails} />
+      <EmailInput emails={bccEmails} setEmails={setBccEmails} />
+
+      <div>To: {JSON.stringify(toEmails)}</div>
+      <div>Cc: {JSON.stringify(ccEmails)}</div>
+      <div>Bcc: {JSON.stringify(bccEmails)}</div>
     </>
   );
 }
