@@ -1,0 +1,34 @@
+.email__input__container {
+  /* border: 1px solid red; */
+  background-color: #fff;
+  padding: 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.email__input__list_item {
+  display: inline-block;
+  border-radius: 50vh;
+  background-color: #fff;
+  border: 1px solid rgb(95, 99, 104);
+  margin: 4px;
+  padding: 2px 5px;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgb(218, 220, 224) inset;
+  color: rgb(95, 99, 104);
+}
+
+.email__input__list__item__close {
+  border: none;
+  background-color: #fff;
+}
+
+.email__input__box {
+  flex: 1;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  margin: 4px;
+  padding: 2px 5px;
+  font-size: 15px;
+}
